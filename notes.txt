@@ -1,0 +1,111 @@
+CSS:
+
+Types of selectors:
+  1. element selectors eg : h1{}
+  2. class selectors eg : .class-name {}
+  3. attribute selectors eg : [disabled(attribute)] {}
+  4. Id selectors eg : #id-name {}
+  5. universal selectors eg : *{}
+
+
+Types of combinators:
+  1. Adjacent combinators eg: div + p + h1 {}
+  2. General Sibling combinators eg: div ~ p {} 
+  3. Child combinators eg: div > p {} 
+  4. Descendant combinators eg: div p {}
+
+
+Box model:
+
+margin, border, padding and content
+
+refer box.png
+
+margin collapsing
+
+shorthand properties:
+{
+   border-width: 2px;
+   border-style: dashed | solid
+   border-color: orange
+}      
+
+this can be written as
+
+{
+   border: 2px dashed orange
+}
+
+this is called shorthand properties
+
+
+margin: 2px(top) 3px(right) 4px(bottom) 6px(left)
+
+margin: 2px(top & bottom) 3px(left & right)
+
+margin: 3px(all four sides)
+
+
+height, width, padding, margin, box-sizing
+
+display property: inline, block, inline-block(display elements in a same row until width available )
+
+
+pseudo classes - Defines the style of a specific state of an element  : eg -> :class name
+pseudo elements - Defines the style of a specific part of an element : eg -> :: element name
+
+
+css properties worth to remember:
+ color:
+ background-color:
+ display:
+ padding:
+ border:
+ margin:
+ width:
+ height:
+ box-sizing: content-box (default);
+ box-sizing: border-box (covers borders, padding for width and height);
+
+ a.active => style anchor tag which is active
+
+ use !important to disable override styling
+
+ eg.   
+ .main-class{
+  color: red !important
+
+ }
+
+
+
+a:not(.active){
+  color: red
+ }
+
+ :not(p) ->selects  selector that not having paragraph
+
+ a.active{
+  color:blue
+ }
+
+ a{
+  color: green;
+ }
+
+ browser support:
+ certain feature in css is only supported by certain browser , this can be viewed in mdn docs website, caniuse.com website
+
+ always check browser support when using certain feature
+
+ https://css-tricks.com/when-using-important-is-the-right-choice/
+
+
+ positioning elements:
+ position: fixed -> fix to view port
+ position: absolute -> fix to latest ancestor position element if any else fix to view port
+ relative: does not come out of document flow as above two properties, but based top,left, right, left value it position change from current position as static
+ sticky: combination of both position and relative
+
+ stacking context:
+ for z-index what index is applied should be dependent on parent element inheritance

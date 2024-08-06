@@ -1,0 +1,27 @@
+#assignment-instructions {
+  color: green;
+  font-family: sans-serif;
+}
+
+.code-green {
+  color: green;
+}
+
+code {
+  color: red;
+  font-family: inherit;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+li + li + li {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+ol > li {
+  background-color: yellow;
+  color: violet;
+}
