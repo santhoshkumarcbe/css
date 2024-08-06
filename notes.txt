@@ -109,3 +109,4 @@ a:not(.active){
 
  stacking context:
  for z-index what index is applied should be dependent on parent element inheritance
+ stacking context created automatically for position: fixed but not for other position value
